@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Cek Status KTP - POS Indonesia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="main-container">
+    <div class="header-card">
+        <div class="logo-text">
+            <i class="fas fa-mail-bulk"></i> POS Indonesia
+        </div>
+        <p class="subtitle">Layanan Pelacakan Status KTP</p>
+    </div>
+    
+    <div class="row">
+        <div class="col-lg-5 mb-4">
+            <div class="search-card">
+                <div class="search-label">
+                    <i class="fas fa-search"></i> Nomor Pengajuan KTP
+                </div>
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="form-control search-input"
+                    placeholder="Masukkan nomor pengajuan..."
+                >
+                <button class="search-btn" id="searchBtn">
+                    <i class="fas fa-search"></i> Cari Data
+                </button>
+            </div>
+        </div>
+        
+        <div class="col-lg-7">
+            <div class="details-card">
+                <h4 class="details-title">
+                    <i class="fas fa-info-circle"></i> Detail Pengajuan
+                </h4>
+                <div id="details">
+                    <div class="empty-state">
+                        <i class="fas fa-inbox"></i>
+                        <p>Masukkan nomor pengajuan untuk melihat detail</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
